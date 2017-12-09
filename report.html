@@ -11944,7 +11944,7 @@ div#notebook {
 <span class="n">n_at_most_50k</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;income&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;&lt;=50K&#39;</span><span class="p">])</span>
 
 <span class="c1"># TODO: Percentage of individuals whose income is more than $50,000</span>
-<span class="n">greater_percent</span> <span class="o">=</span> <span class="n">n_greater_50k</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">n_records</span><span class="p">)</span>
+<span class="n">greater_percent</span> <span class="o">=</span> <span class="n">n_greater_50k</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">n_records</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
 
 <span class="c1"># Print the results</span>
 <span class="k">print</span> <span class="s2">&quot;Total number of records: {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_records</span><span class="p">)</span>
@@ -11971,7 +11971,7 @@ div#notebook {
 <pre>Total number of records: 45222
 Individuals making more than $50,000: 11208
 Individuals making at most $50,000: 34014
-Percentage of individuals making more than $50,000: 0.25%
+Percentage of individuals making more than $50,000: 24.78%
 True
 </pre>
 </div>
@@ -14276,7 +14276,7 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>**Answer:</p>
-<p>Of the three models tested, I recommend using the AdaBoostClassifier for the task of identifying individuals that make more than \$50,000. My reasoning is two-fold: first, AdaBoost produced the highest F score on the test set while using 100 percent of the training data and second, AdaBoost offers the ability to further tune in order to produce even better results by altering AdaBoost as well as the base decision trees it is using. KNN and Logistic Regression are not quite as tunable. While AdaBoost does require the lengthiest training time of the three tested (AdaBoost, KNN, and Logistic Regression), it is still much faster than Support Vector Machines and offers much faster querying than KNN. I also believe that AdaBoost is very suitable for the data given that I will be using Decision Trees as the base algorithm. In this setting, it is very intuitive to imagine asking many questions about the individuals, and then guessing whether or not they make more than \$50,000.</p>
+<p>Of the three models tested, I recommend using the AdaBoostClassifier for the task of identifying individuals that make more than 50K. My reasoning is mainly that although AdaBoost did not produce the highest F score on the test set while using 100 percent of the training data (logistic regression did), I think through tuning both AdaBoost and the base estimator (decision tree), AdaBoost has higher potential than logistic regression. While AdaBoost does require the lengthiest training time of the three tested (AdaBoost, KNN, and Logistic Regression), it is still much faster than Support Vector Machines and offers much faster querying than KNN. I also believe that AdaBoost is very suitable for the data given that I will be using Decision Trees as the base algorithm. In this setting, it is very intuitive to imagine asking many questions about the individuals, and then guessing whether or not they make more than 50K.</p>
 <p>**</p>
 
 </div>
