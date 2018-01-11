@@ -14947,6 +14947,7 @@ Epoch 20/20
 <h3 id="(IMPLEMENTATION)-Test-Your-Algorithm-on-Sample-Images!">(IMPLEMENTATION) Test Your Algorithm on Sample Images!<a class="anchor-link" href="#(IMPLEMENTATION)-Test-Your-Algorithm-on-Sample-Images!">&#182;</a></h3><p>Test your algorithm at least six images on your computer.  Feel free to use any images you like.  Use at least two human and two dog images.</p>
 <p><strong>Question 6:</strong> Is the output better than you expected :) ?  Or worse :( ?  Provide at least three possible points of improvement for your algorithm.</p>
 <p><strong>Answer:</strong></p>
+<p>The output is actually pretty cool (for not having done anything like this before!). Having achieved nearly 83.5% accuracy on test images is way higher than I would have expected going in! One area of improvement could be to improve the functions that detect dogs and humans. A possible way of improving this could be to create an animal (dog/human/cat/etc.) classifier using Resnet50's weights and then use that as the detector in the app (vs. using dog_detector and face_detector). In other words, step 1. load photo, step 2. classify animal, and step 3. classify breed. A second area of improvment could be to increase the amount of data we have to train on by using data augmentation on the training set. This could really help our algorithm. A third area of improvement could be to add another fully connected layer to help our network further specialize in classifying dogs!</p>
 
 </div>
 </div>
