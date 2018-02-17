@@ -12,3 +12,6 @@ Board of Governors of the Federal Reserve System (US), Effective Federal Funds R
 Federal Reserve Bank of St. Louis, TED Spread [TEDRATE], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/TEDRATE, February 15, 2018.
 Board of Governors of the Federal Reserve System (US), Trade Weighted U.S. Dollar Index: Major Currencies [TWEXMMTH], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/TWEXMMTH, February 16, 2018.
 Board of Governors of the Federal Reserve System (US), 3-Month Treasury Bill: Secondary Market Rate [TB3MS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/TB3MS, February 16, 2018.
+
+Link to the proposal review:
+https://review.udacity.com/#!/reviews/978867
