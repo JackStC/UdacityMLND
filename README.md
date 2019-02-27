@@ -1,4 +1,4 @@
-# jacks_repository
+# Udacity MLND
 Udacity MLND
 
 Original data manipulation (taking month-over-month changes, etc.) was done in Excel ("CapstoneProjectData.csv") after downloading the economic data from both FRED and Yahoo. Once complete, the data was further examined in a Jupyter Notebook using a Python 2 kernel. Numpy, Pandas, Seaborn, Matplotlib, and SKLearn were the major libraries used during the model development.
